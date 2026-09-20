@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miss. Rohma Younas | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 8%;
+      background: rgba(0, 0, 0, 0.9);
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #aaa;
+    }
+
+    section {
+      padding: 100px 8%;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #000 60%, #1b1b1b);
+    }
+
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 25px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.25);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      color: #bbb;
+      font-weight: normal;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: auto;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #ccc;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 45px;
+    }
+
+    .about {
+      background: #111;
+    }
+
+    .about-box {
+      max-width: 800px;
+      margin: auto;
+      padding: 35px;
+      border: 1px solid #333;
+      border-radius: 15px;
+      text-align: center;
+      background: #080808;
+    }
+
+    .about-box p {
+      color: #ccc;
+    }
+
+    .college {
+      text-align: center;
+      border: 1px solid #333;
+      max-width: 600px;
+      margin: auto;
+      padding: 35px;
+      border-radius: 15px;
+      background: #111;
+    }
+
+    .college h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .college p {
+      color: #bbb;
+    }
+
+    .skills {
+      background: #111;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid #333;
+      border-radius: 15px;
+      text-align: center;
+      background: #050505;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: white;
+    }
+
+    .goals {
+      text-align: center;
+    }
+
+    .goals p {
+      max-width: 750px;
+      margin: auto;
+      color: #ccc;
+      font-size: 18px;
+    }
+
+    .contact {
+      background: #111;
+      text-align: center;
+    }
+
+    .contact p {
+      color: #bbb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #000;
+      color: #777;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 700px) {
+      nav {
+        padding: 15px 4%;
+      }
+
+      nav a {
+        margin-left: 8px;
+        font-size: 11px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      section {
+        padding: 80px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">ROHMA</div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#goals">Goals</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div>
+      <img src="profile.jpg" alt="Miss Rohma Younas" class="profile-img">
+
+      <h1>MISS. ROHMA YOUNAS</h1>
+      <h2>ICS Physics Student</h2>
+
+      <p>
+        A college student passionate about learning,
+        technology, programming and creativity.
+      </p>
+
+      <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="title">About Me</h2>
+
+    <div class="about-box">
+      <p>
+        Hello! I am Miss. Rohma Younas, an ICS Physics student
+        at Punjab College City Campus. I am interested in computers,
+        programming and modern technology. I enjoy learning new
+        things and improving my skills through practical projects.
+      </p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="title">My Skills</h2>
+
+    <div class="cards">
+      <div class="card">💻 Basic Computer Skills</div>
+      <div class="card">👩‍💻 Basic Programming</div>
+      <div class="card">🧠 Problem Solving</div>
+      <div class="card">💬 Communication</div>
+      <div class="card">🤝 Teamwork</div>
+      <div class="card">🎤 Presentation Skills</div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="title">Education</h2>
+
+    <div class="college">
+      <h3>Punjab College City Campus</h3>
+      <p>ICS Physics</p>
+      <p>College Student</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">My Interests</h2>
+
+    <div class="cards">
+      <div class="card">💻 Computer Science</div>
+      <div class="card">⚙️ Programming</div>
+      <div class="card">🚀 Technology</div>
+      <div class="card">🎨 Creative Projects</div>
+      <div class="card">📚 Learning</div>
+    </div>
+  </section>
+
+  <section class="goals" id="goals">
+    <h2 class="title">My Goals</h2>
+
+    <p>
+      My goal is to improve my programming and technical skills,
+      explore modern technologies and build useful projects
+      in the future.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="title">Contact Me</h2>
+
+    <p>
+      I am always interested in learning, creating and exploring
+      new opportunities.
+    </p>
+
+    <a href="mailto:your-email@example.com" class="btn">
+      Contact Me
+    </a>
+  </section>
+
+  <footer>
+    © 2026 MISS. ROHMA YOUNAS — Student Portfolio
+  </footer>
+
+</body>
+</html>
